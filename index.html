@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💰 Personal Finance Tracker</h1>
+
+    <!-- Summary -->
+    <div class="summary">
+      <div class="card income">Income: ₹<span id="totalIncome">0</span></div>
+      <div class="card expense">Expenses: ₹<span id="totalExpense">0</span></div>
+      <div class="card balance">Balance: ₹<span id="balance">0</span></div>
+    </div>
+
+    <!-- Form -->
+    <form id="transactionForm">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <!-- Transactions -->
+    <h2>Transactions</h2>
+    <ul id="transactionList"></ul>
+
+    <!-- Chart -->
+    <h2>Monthly Overview</h2>
+    <canvas id="financeChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  margin: 0 5px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.income { background: #2ecc71; }
+.expense { background: #e74c3c; }
+.balance { background: #3498db; }
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  flex: 1;
+  padding: 8px;
+}
+
+form button {
+  padding: 8px 15px;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+li.income { color: #2ecc71; }
+li.expense { color: #e74c3c; }
+
+.delete {
+  cursor: pointer;
+  color: #999;
+}
